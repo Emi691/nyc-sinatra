@@ -1,0 +1,14 @@
+<h1><%=@figure.name%></h1>
+
+<%if !@titles.empty?%>
+<%@titles.each do |title|%>
+<h2><%=title.name%></h2>
+<%end%>
+<%end%>
+
+<%if !@landmarks.empty?%>
+<%@landmarks.each do |landmark|%>
+<h2><%=landmark.name%><%=landmark.year_completed%></h2>
+<%end%>
+<%end%>
+
